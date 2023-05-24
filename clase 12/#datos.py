@@ -1,8 +1,12 @@
 #datos.pi
 print("datos personales")
 print("--------------")
-vnom=input("ingrese su nombre")
-vedad=input("ingrese edad")
+vnom=str(input("ingrese su nombre"))
+while True:
+  try:
+    vedad=int(input("ingrese edad"))
+  except:
+    print("valor no correspondido")  
 print("----------------")
 print(f"su nombre es: {vnom}")
 print(f"su edad es: {vedad}")
